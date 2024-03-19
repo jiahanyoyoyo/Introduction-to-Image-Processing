@@ -2,7 +2,7 @@
 Author: jiahanyoyoyo harry620325@gmail.com
 Date: 2024-03-08 23:51:17
 LastEditors: jiahanyoyoyo harry620325@gmail.com
-LastEditTime: 2024-03-20 03:36:45
+LastEditTime: 2024-03-20 04:02:30
 FilePath: \HW1\110550001_hw1.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -81,8 +81,8 @@ for y in range(height):
             u = pos_y - y1
             v = pos_x - x1
             tmp = 0
-            for ii in range(-1,2):
-                for jj in range(-1,2):
+            for ii in range(-1,3):
+                for jj in range(-1,3):
                     if y1+ii < 0 or x1+jj < 0 or y1+ii >= height or x1+jj >= width:
                         continue
                     tmp += image[y1+ii,x1+jj]*weights(ii-u)*weights(jj-v)
